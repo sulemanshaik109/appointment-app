@@ -13,7 +13,7 @@ const Booking = () => {
     try {
       const token = localStorage.getItem('token');
       await axios.post(
-        'http://localhost:5000/api/appointments',
+        'http://localhost:3000/api/appointments',
         { date },
         {
           headers: { Authorization: `Bearer ${token}` }

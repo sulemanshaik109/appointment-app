@@ -9,7 +9,7 @@ const AppointmentHistory = () => {
     const fetchAppointments = async () => {
       try {
         const token = localStorage.getItem('token');
-        const { data } = await axios.get('http://localhost:5000/api/appointments', {
+        const { data } = await axios.get('http://localhost:3000/api/appointments', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setAppointments(data);
